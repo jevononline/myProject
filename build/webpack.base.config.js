@@ -45,12 +45,12 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|jpeg|gif|svg)/,
+                test: /\.(png|jpg|jpeg|gif|svg|ico)/,
                 use: {
                     loader: "url-loader",
                     options: {
                         outputPath: "images/", // 图片输出的路径
-                        limit: 10 * 1024
+                        'limit': 8192
                     }
                 }
             },
@@ -73,6 +73,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
+            'title': 'Demo',
             filename: "index.html", // 最终创建的文件名
             template: path.resolve(__dirname, '..', "src/template.html"), // 指定模板路径
             minify: {
