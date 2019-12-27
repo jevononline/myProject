@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'busong';
+  src: url(fonts/本墨钧宋-e2b14.min.ttf);
+}
+
+.home {
+  height: 80vh;
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+/*# sourceMappingURL=4.css.map*/
