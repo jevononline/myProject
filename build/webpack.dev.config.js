@@ -5,7 +5,7 @@ const webpack = require("webpack");
 
 module.exports = merge(commonConfig, {
     mode: "development",
-    entry: ["react-hot-loader/patch"],
+    entry: ['@babel/polyfill', "react-hot-loader/patch"],
     devtool: 'cheap-module-eval-soure-map',
     output: {
         // 输出目录
