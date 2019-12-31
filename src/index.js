@@ -11,7 +11,7 @@ import { createLogger } from 'redux-logger';
 // import Count from "./pages/Count/index";
 import BasicLayout from "./layouts/BasicLayout/index"
 import { AppContainer } from "react-hot-loader";
-
+import reducer from './reducers'
 import './index.scss'
 // import Router from "./router";
 import $ from 'jquery';
@@ -57,7 +57,7 @@ import $ from 'jquery';
 // }
 const logger = createLogger();
 const store = createStore(
-    // reducer,
+    reducer,
     applyMiddleware(promise, logger)
 );
 class App extends React.Component {

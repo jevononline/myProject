@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../assets/home.scss';
 import './index.scss';
 import { Button } from 'antd';
+import TodoApp from '../../components/App';
 
 // import { Card, WingBlank, WhiteSpace } from 'antd-mobile';
 export default class Product extends Component {
@@ -12,6 +13,7 @@ export default class Product extends Component {
         return (
             <div className="product">
                 <h1 className="h-txt">This is product Page!!!</h1>
+                <TodoApp />
             </div>
         )
     }
